@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background: url('./img/background.png');
+}
+
+.container {
+    background-color: #a8a7a7;
+    width: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 100px auto 0;
+    border: 3px solid black;
+}
+
+h1 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.input-task {
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 345px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgb(102, 102, 102);
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 0 15px;
+    float:right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-add-task:hover {
+    background-color: rgb(18, 18, 204);
+    transition: 0.7s;
+}
+
+.list-task {
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.task {
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.task:hover {
+    transition: 0.7s;
+    background-color: #02fd24;
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+.done {
+    background-color: #02fd24;
+}
+
+.date {
+    margin-bottom: 25px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 135px;
+}
+
+.name {
+    border: none;
+    border-radius: 12px;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+}
